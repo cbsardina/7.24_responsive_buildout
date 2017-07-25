@@ -81,12 +81,17 @@ header{
 
 @media (min-width: 300px){
   div {
-  padding: 1em;
+    padding: 1em;
   }
   header {
     margin: inherit auto;
     display: flex;
     flex-direction: column;
+  }
+  #main_nav a {
+    margin: .5 auto;
+    width: 98%;
+    flex-grow: 1;
   }
   #logo {
     align-self: center;
@@ -110,3 +115,28 @@ header{
     padding: 1em;
    }
 }
+
+/*============ TABLET ==========*/
+@media (min-width: 600px){
+
+  header {
+    flex-direction: column;
+  }
+  #main_nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #main_nav a {
+    width: 31%;
+    margin: .25em;
+  }
+  #sidebar_content {
+    display: flex;
+  }
+  #sidebar_content div {
+    margin: 1em 0;
+    width: 100%;
+  }
+}
+/*============ DESKTOP ==========*/
