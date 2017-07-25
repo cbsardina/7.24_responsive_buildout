@@ -46,7 +46,7 @@ a:hover{
     color: blue;
 }
 
-header{ 
+header{
     padding-bottom: 15px;
     margin-bottom: 20px;
     border-bottom: 2px solid #ddddff;
@@ -75,4 +75,38 @@ header{
 
 #main_nav a:hover{
     background: #ddddff;
+}
+
+/*============ MOBILE ==========*/
+
+@media (min-width: 300px){
+  div {
+  padding: 1em;
+  }
+  header {
+    margin: inherit auto;
+    display: flex;
+    flex-direction: column;
+  }
+  #logo {
+    align-self: center;
+  }
+  #main_content {
+    background-color: #ddffff;
+    border-radius: .5em;
+  }
+  #sidebar_content div {
+    background-color: #ffffdd;
+    margin: 1em auto;
+  }
+  #site_footer nav {
+    background-color: rgb(254, 220, 173);
+    margin: inherit auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  #site_footer nav a {
+    padding: 1em;
+   }
 }
